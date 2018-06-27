@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "UMD",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "built/bundle.js",
+        "sourceMap": true,
+        "target": "es5",
+
+        "jsx": "react",
+        "jsxFactory": "dom"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
