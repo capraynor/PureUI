@@ -4,7 +4,6 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outFile": "built/bundle.js",
         "sourceMap": true,
         "target": "es5",
 
