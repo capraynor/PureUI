@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
-        "module": "UMD",
+        "module": "es6",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
         "target": "es5",
-
         "jsx": "react",
-        "jsxFactory": "dom"
+        "jsxFactory": "dom",
+        "outDir": "./tsbuilt"
     },
     "include": [
         "src/**/*"

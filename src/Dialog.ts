@@ -1,4 +1,4 @@
-class Dialog{
+export default class Dialog{
     constructor() {
        
         
