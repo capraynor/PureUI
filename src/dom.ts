@@ -21,5 +21,5 @@ function dom (tag: any, attrs: any, children: any): Element {
   }
   return element;
 }
-
+//hhh
 export {dom}
