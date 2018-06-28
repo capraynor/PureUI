@@ -14,4 +14,5 @@ function getAnchorElement(){
 
 function foo(){
     //test
+    //test3
 }
