@@ -1,6 +1,6 @@
 declare namespace JSX {
     interface Element extends HTMLElement { }
-    interface IntrinsicElements{
+    interface IntrinsicElements extends HTMLElement {
         [prop: string]: any
     }
   }

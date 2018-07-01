@@ -1,5 +1,3 @@
-
-
 function dom (tag: any, attrs: any, children: any): Element {
   var element = document.createElement(tag);
 
@@ -15,6 +13,11 @@ function dom (tag: any, attrs: any, children: any): Element {
   }
   for (let i = 2; i < arguments.length; i++) {
       let child = arguments[i];
+
+      if (!child){
+        continue;
+      }
+
       element.appendChild(
           child.nodeType == null ?
               document.createTextNode(child.toString()) : child);

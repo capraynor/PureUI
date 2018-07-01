@@ -1,13 +1,16 @@
 module.exports = {
   "mode": "development",
-  entry: "./dev-preview/index.ts",
+  entry: {
+    devPreview: "./dev-preview/index.ts",
+    domTest: "./dev-preview/dom-test-index.tsx",
+  },
   output: {
-      filename: "bundle.js",
+      filename: "[name].bundle.js",
       path: __dirname + "/dist"
   },
 
   // Enable sourcemaps for debugging webpack's output.
-  devtool: "source-map",
+  // devtool: "source-map",
 
   resolve: {
       // Add '.ts' and '.tsx' as resolvable extensions.
@@ -23,4 +26,8 @@ module.exports = {
           { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
       ]
   },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  }
 };
